@@ -34,7 +34,7 @@ function schema(table_name) {
     .on('error', function(err) {
       console.log(err);
     }).on('end',function() {
-      let collection_name = "test"; // this must be table_name and table_name = collection.id
+      let collection_name = table_name; // this must be table_name and table_name = collection.id
       let collectionUrl = `${databaseUrl}/colls/${collection_name}`;
       for(let i=0;i<A.length;i++) {
         client.createDocument(collectionUrl, A[i], (err, created) => {
