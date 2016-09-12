@@ -1,6 +1,6 @@
 const config = require('./config');
 const jsforce = require('jsforce');
-var documentClient = require("documentdb").DocumentClient;
+const documentClient = require("documentdb").DocumentClient;
 const conn = new jsforce.Connection();
 const url=require("url");
 const client = new documentClient(config.endpoint, { "masterKey": config.primarykey });
