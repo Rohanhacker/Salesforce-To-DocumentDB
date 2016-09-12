@@ -1,0 +1,15 @@
+{
+  "name": "sfdocument",
+  "version": "1.0.0",
+  "description": "salesforce to documentdb",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohan Malhotra",
+  "license": "MIT",
+  "dependencies": {
+    "documentdb": "^1.9.0",
+    "jsforce": "^1.7.0"
+  }
+}
